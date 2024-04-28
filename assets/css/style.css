@@ -811,6 +811,28 @@ main {
 /**
  * skills 
  */
+.skill{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.skilled{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.Skilled:hover{
+  scale: 1.2;
+}
 
 .skills-title { margin-bottom: 20px; }
 
