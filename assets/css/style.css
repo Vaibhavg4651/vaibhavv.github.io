@@ -133,7 +133,9 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { background: var(--smoky-black); 
+  overflow-x: hidden;
+}
 
 
 
@@ -821,13 +823,21 @@ main {
   border-radius: 14px;
 }
 
-.skilled{
+.ski{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
   width: 100%;
   gap: 15px;
+}
+
+.skilled{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  align-items: center;
+  
 }
 
 .Skilled:hover{
@@ -1625,7 +1635,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
-
+ 
 
   /**
    * CONTACT
@@ -1637,12 +1647,34 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
+
+  
   
 }
 
 
 
 
+@media (max-width:1024px) {
+  .skilled{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .ski{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+  
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  
+  }
+  
+}
 
 /**
  * responsive larger than 1024px screen
